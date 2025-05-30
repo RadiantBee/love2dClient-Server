@@ -173,6 +173,6 @@ function love.draw()
 		love.graphics.setColor(player.colorR, player.colorG, player.colorB)
 		love.graphics.circle("fill", player.x + 17, player.y + 16, 5)
 		love.graphics.print(player.nickname, player.x, player.y + 20)
+		love.graphics.setColor(1, 1, 1)
 	end
-	love.graphics.setColor(1, 1, 1)
 end
