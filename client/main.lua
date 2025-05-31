@@ -58,6 +58,7 @@ function love.load()
 
 	while true do
 		udp:send("h|" .. name .. "|" .. color[1] .. "|" .. color[2] .. "|" .. color[3])
+		print("[*] Handshake sent")
 		data = split(udp:receive() or "", "|")
 		if data[1] == "h" then
 			print("[+] Handshake recieved!")
@@ -84,6 +85,7 @@ function love.load()
 			playerID = #players
 			break
 		end
+		socket.sleep(0.5)
 	end
 
 	print("[+] Connected!")
@@ -108,7 +110,7 @@ end
 function love.quit()
 	if playerID then
 		udp:send("q|" .. playerID)
-		print("Exit sent, goodbye!")
+		print("[*] Exit sent, goodbye!")
 	end
 end
 
