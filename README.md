@@ -44,7 +44,3 @@ competitive games.
 
 <p> Phew... And you should take in account that these methods can be combined in a various amont of ways. </p>
 <p> I tried to implement state-sync approach, but in the end my solution was jittery and looked quite bad. </p>
-<p> Now, when the meaning of "Authoritative Server built on UDP socket with immediate broadcasting." is clear we could move on. </p>
-
-## How it works?
-<p> Great question! Let's look at the code and reconstruct the process. </p>
